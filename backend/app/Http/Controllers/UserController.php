@@ -23,7 +23,7 @@ class UserController extends Controller
    *     )
    * )
    */
-  public function index()
+  public function index(Request $request)
   {
     $perPage = (int) $request->query('per_page', 15);
     $perPage = $perPage > 0 ? $perPage : 15;

@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/user.dart';
 
 class ApiService {
-  static const String _baseUrl = 'http://localhost:8000/api';
+  static const String _baseUrl = 'http://localhost/api';
 
   Future<List<User>> getUsers() async {
     final response = await http.get(Uri.parse('$_baseUrl/users'));
